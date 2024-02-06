@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #ffff;
+    --second-bg-color: #52C326;
+    --main-color: #72E244;
+    --text-color: #0000;
+    --second-color: #162947;
+    --other-color: #171a1a;
+    --true-color: red;
+}
+body{
+    background: var(--bg-color);
+}
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    font-weight: 600;
+    color: var(--second-bg-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--second-bg-color);
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: var(--other-color);
+    font-weight: 600;
+}
+.btn{
+    background: var(--bg-color);
+    color: var(--second-color);
+    font-weight: 500;
+    width: 100%;
+    border: 3px solid var(--second-bg-color);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: medium;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+    background: var(--main-color);
+    color: var(--bg-coloR);
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background: var(--main-color);
+}
+.incorrect{
+    background: var(--true-color);
+}
